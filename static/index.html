@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silabs — local business outreach</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ════════════════════ SIDEBAR ════════════════════ -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <div class="logo-icon">📡</div>
+        <div>
+          <div class="logo-text">Silabs</div>
+          <div class="logo-sub">Local outreach</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="sidebar-setup-note" id="sidebar-setup-note" hidden>Finish setup to open these pages.</p>
+    <nav class="sidebar-nav">
+      <div class="nav-section-label">Overview</div>
+      <a class="nav-item" data-page="dashboard" title="Dashboard">
+        <span class="nav-icon">🏠</span> Dashboard
+      </a>
+
+      <div class="nav-section-label">Scraper</div>
+      <a class="nav-item" data-page="clients" title="Potential Clients">
+        <span class="nav-icon">🔍</span> Potential Clients
+      </a>
+      <a class="nav-item" data-page="agencies" title="Agencies">
+        <span class="nav-icon">🏢</span> Agencies
+      </a>
+
+      <div class="nav-section-label">Engine</div>
+      <a class="nav-item" data-page="ai-engine" title="AI Engine">
+        <span class="nav-icon">🤖</span> AI Engine
+      </a>
+      <a class="nav-item" data-page="review" title="Review Queue">
+        <span class="nav-icon">📬</span> Review Queue
+        <span class="nav-badge" id="review-badge" style="display:none">0</span>
+      </a>
+
+      <div class="nav-section-label">Outreach</div>
+      <a class="nav-item" data-page="sender" title="Email Sender">
+        <span class="nav-icon">📤</span> Email Sender
+      </a>
+      <a class="nav-item" data-page="crm" title="CRM">
+        <span class="nav-icon">📊</span> CRM
+      </a>
+
+      <div class="nav-section-label">System</div>
+      <a class="nav-item" data-page="settings" title="Settings">
+        <span class="nav-icon">⚙️</span> Settings
+      </a>
+    </nav>
+    <a class="sidebar-credit" href="https://sacredintelligencelabs.com.au" target="_blank" rel="noopener noreferrer" title="Sacred Intelligence Labs">Silabs · Sacred Intelligence Labs</a>
+  </aside>
+
+  <!-- ════════════════════ MAIN ════════════════════ -->
+  <main class="main">
+
+    <!-- ── First-run setup ───────────────────────── -->
+    <section class="section" id="page-setup">
+      <div class="page-header">
+        <h1>Set up your workspace</h1>
+        <p>The menu stays closed until this setup is finished. Choose one country, then a state, then the cities. A name you only type, without choosing it, is not used.</p>
+      </div>
+      <div class="page-content" id="setup-content"></div>
+    </section>
+
+    <!-- ── Dashboard ─────────────────────────────── -->
+    <section class="section" id="page-dashboard">
+      <div class="page-header">
+        <h1>Dashboard</h1>
+        <p>Your outreach pipeline at a glance.</p>
+      </div>
+      <div class="page-content">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">🔍</div>
+            <div class="stat-value" id="stat-clients">—</div>
+            <div class="stat-label">Potential Clients</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🏢</div>
+            <div class="stat-value" id="stat-agencies">—</div>
+            <div class="stat-label">Agencies</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">📬</div>
+            <div class="stat-value" id="stat-pending">—</div>
+            <div class="stat-label">Pending Review</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">📤</div>
+            <div class="stat-value" id="stat-sent">—</div>
+            <div class="stat-label">Emails Sent</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">🚀 Getting Started</div>
+          <div class="card-subtitle">Complete these steps to begin your outreach campaign</div>
+          <div id="checklist"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">🖥 Local System Controls</div>
+          <div class="card-subtitle">Single-user local controls for stopping this server safely.</div>
+          <div id="local-system-controls"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Potential Clients ──────────────────────── -->
+    <section class="section" id="page-clients">
+      <div class="page-header">
+        <h1>Potential Clients</h1>
+        <p>Businesses discovered with Google Maps, scored by digital presence.</p>
+      </div>
+      <div class="page-content" id="clients-content">
+        <!-- Rendered by clients.js -->
+      </div>
+    </section>
+
+    <!-- ── Agencies ───────────────────────────────── -->
+    <section class="section" id="page-agencies">
+      <div class="page-header">
+        <h1>Agencies</h1>
+        <p>Agencies filtered by technology stack.</p>
+      </div>
+      <div class="page-content" id="agencies-content">
+        <!-- Rendered by agencies.js -->
+      </div>
+    </section>
+
+    <!-- ── AI Engine ──────────────────────────────── -->
+    <section class="section" id="page-ai-engine">
+      <div class="page-header">
+        <h1>AI Engine</h1>
+        <p>Generate personalised outreach emails using Claude claude-sonnet-4-6.</p>
+      </div>
+      <div class="page-content" id="ai-engine-content">
+        <!-- Rendered by ai_engine.js -->
+      </div>
+    </section>
+
+    <!-- ── Review Queue ───────────────────────────── -->
+    <section class="section" id="page-review">
+      <div class="page-header">
+        <h1>Review Queue</h1>
+        <p>Approve, edit, or discard AI-generated emails before sending.</p>
+      </div>
+      <div class="page-content" id="review-content">
+        <!-- Rendered by review.js -->
+      </div>
+    </section>
+
+    <!-- ── Email Sender ───────────────────────────── -->
+    <section class="section" id="page-sender">
+      <div class="page-header">
+        <h1>Email Sender</h1>
+        <p>Send approved emails through Gmail or your own mailbox.</p>
+      </div>
+      <div class="page-content" id="sender-content">
+        <!-- Rendered by sender.js -->
+      </div>
+    </section>
+
+    <!-- ── CRM ────────────────────────────────────── -->
+    <section class="section" id="page-crm">
+      <div class="page-header">
+        <h1>CRM</h1>
+        <p>Track outreach status and sync to Google Sheets. Manually check follow-ups after 5 days.</p>
+      </div>
+      <div class="page-content" id="crm-content">
+        <!-- Rendered by crm.js -->
+      </div>
+    </section>
+
+    <!-- ── Settings ───────────────────────────────── -->
+    <section class="section" id="page-settings">
+      <div class="page-header">
+        <h1>Settings</h1>
+        <p>Configure API keys and email credentials. All values are stored in your local <code>.env</code> file.</p>
+      </div>
+      <div class="page-content" id="settings-content">
+        <!-- Rendered by settings.js -->
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div id="toast-container"></div>
+
+<script src="/static/js/app.js"></script>
+<script src="/static/js/countries.js"></script>
+<script src="/static/js/states.js"></script>
+<script src="/static/js/setup.js"></script>
+<script src="/static/js/settings.js"></script>
+<script src="/static/js/clients.js"></script>
+<script src="/static/js/agencies.js"></script>
+<script src="/static/js/ai_engine.js"></script>
+<script src="/static/js/review.js"></script>
+<script src="/static/js/sender.js"></script>
+<script src="/static/js/crm.js"></script>
+
+</body>
+</html>

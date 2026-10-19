@@ -1,0 +1,16 @@
+.env
+profile.json
+outreach.db
+*.db
+*.db-*
+*.db.bak*
+.DS_Store
+google-service-account.json
+static/assets/resume.pdf
+.job_store.json
+venv/
+__pycache__/
+*.pyc
+.claude/
+.e2e/
+legacy_signatures.txt
