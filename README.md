@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://sacredintelligencelabs.com.au">
+    <img src="https://sacredintelligencelabs.com.au/sacred-logo.png?v=1" alt="Sacred Intelligence Labs" width="480">
+  </a>
+</p>
+
 # Nearletter
 
 Local business outreach. Find nearby businesses, write one email at a time, read it, then send it yourself.
