@@ -2,6 +2,10 @@
 
 Local business outreach. Find nearby businesses, write one email at a time, read it, then send it yourself.
 
+![Nearletter example install](docs/nearletter-setup.gif)
+
+The animation is an example install. Country, state, and city are example places. The key checks and the mailbox are answered on the computer that recorded it. No Google, Claude, or email account is contacted, and no real key is on screen.
+
 Nearletter is a local program for one person. It runs on your computer. There is no account, no cloud host, and no automatic sending. The path is always the same: search, draft, review, approve or reject, send.
 
 Built by [Silabs](https://sacredintelligencelabs.com.au), Sacred Intelligence Labs.
