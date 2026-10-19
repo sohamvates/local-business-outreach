@@ -1,8 +1,8 @@
-# Silabs — local business outreach
+# Nearletter
 
-Find nearby businesses, write one email at a time, read it, then send it yourself.
+Local business outreach. Find nearby businesses, write one email at a time, read it, then send it yourself.
 
-Silabs is a local program for one person. It runs on your computer. There is no account, no cloud host, and no automatic sending. The path is always the same: search, draft, review, approve or reject, send.
+Nearletter is a local program for one person. It runs on your computer. There is no account, no cloud host, and no automatic sending. The path is always the same: search, draft, review, approve or reject, send.
 
 Built by [Silabs](https://sacredintelligencelabs.com.au), Sacred Intelligence Labs.
 

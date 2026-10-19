@@ -162,7 +162,7 @@ function makeTestEmailCard() {
     makeTestField("test-recipient-email", "Recipient Email", "email", "you@example.com"),
     makeTestSenderSelect(),
     makeTestField("test-subject", "Subject", "text", "Test email"),
-    makeTestField("test-body", "Body", "textarea", "This is a test email from the Outreach System.")
+    makeTestField("test-body", "Body", "textarea", "This is a test email from Nearletter.")
   );
 
   const quickActions = document.createElement("div");

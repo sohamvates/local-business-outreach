@@ -99,7 +99,7 @@ def say(message=""):
 def print_port_help():
     say("Port %d is already in use." % PORT)
     say("This launcher does not stop the other program.")
-    say("If the Outreach System is already open, use it at http://%s:%d" % (HOST, PORT))
+    say("If Nearletter is already open, use it at http://%s:%d" % (HOST, PORT))
     say("or press Stop system on the Dashboard.")
     say("Start it again afterwards with %s" % restart_command())
 
@@ -152,7 +152,7 @@ def main():
         print_port_help()
         sys.exit(1)
     say("")
-    say("  Outreach System starting...")
+    say("  Nearletter starting...")
     say("  http://%s:%d" % (HOST, PORT))
     say("")
     os.execv(

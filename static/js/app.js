@@ -337,7 +337,7 @@ function renderLocalSystemControls(systemStatus) {
 }
 
 async function stopLocalSystem(command) {
-  const confirmed = window.confirm("Stop the local Outreach System now? You will need to run " + command + " to bring it back.");
+  const confirmed = window.confirm("Stop Nearletter now? You will need to run " + command + " to bring it back.");
   if (!confirmed) return;
 
   await withErrorBoundary(
@@ -368,10 +368,10 @@ window.addEventListener(
     const sub = document.querySelector(".logo-sub");
     if (status.brand_name) {
       if (sub) sub.textContent = status.brand_name;
-      document.title = "Silabs — " + status.brand_name;
+      document.title = "Nearletter — " + status.brand_name;
     } else if (status.needs_setup) {
       if (sub) sub.textContent = "Setup";
-      document.title = "Silabs";
+      document.title = "Nearletter";
     }
     const initialPage = _needsSetup ? "setup" : (location.hash.slice(1) || "dashboard");
     navigate(initialPage);

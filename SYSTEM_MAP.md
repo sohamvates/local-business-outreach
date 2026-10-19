@@ -2,7 +2,7 @@
 
 ## What this product is
 
-Local B2B outreach by Silabs (Sacred Intelligence Labs). It finds businesses, drafts a personal email, waits for a manual review, sends through the mailbox you configure, and keeps the result in a local CRM. Google Sheets export is optional. The public guide is README.md.
+Nearletter is local business outreach by Silabs (Sacred Intelligence Labs). It finds businesses, drafts a personal email, waits for a manual review, sends through the mailbox you configure, and keeps the result in a local CRM. Google Sheets export is optional. The public guide is README.md.
 
 ## Agencies and potential clients
 

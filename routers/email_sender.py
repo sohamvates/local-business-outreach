@@ -35,7 +35,7 @@ class TestEmailPayload(BaseModel):
     recipient_email: str
     via: str = "gmail"
     subject: str = "Test email"
-    body: str = "This is a test email from the Outreach System."
+    body: str = "This is a test email from Nearletter."
     attach_resume: bool = False
 
 

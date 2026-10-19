@@ -50,8 +50,8 @@ async def lifespan(app: FastAPI):
 
 # Silabs — Sacred Intelligence Labs — https://sacredintelligencelabs.com.au
 app = FastAPI(
-    title="Silabs",
-    description="Local B2B outreach. Find businesses, review every email, then send it yourself.",
+    title="Nearletter",
+    description="Local business outreach. Find businesses, review every email, then send it yourself.",
     version="1.0.0",
     lifespan=lifespan,
 )
